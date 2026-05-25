@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Project Archive | Ashwin Chovasiya</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            dark: '#0a0a0a',
+            surface: '#121212',
+            accent: '#00d2ff',
+            success: '#10b981',
+            muted: '#888888',
+            border: '#262626',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-dark text-white font-sans selection:bg-accent selection:text-dark">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-md border-b border-border/50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <svg class="w-5 h-5 text-muted group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </svg>
+        <span class="font-bold text-lg tracking-tight">Back to Portfolio</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+    <header class="mb-16 reveal">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Project <span class="bg-gradient-to-r from-accent to-blue-600 bg-clip-text text-transparent">Archive.</span></h1>
+      <p class="text-muted text-xl max-w-2xl">A comprehensive collection of 11+ professional Android applications delivered to the Play Store.</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1: Cricket Fast Live Line - CFLL -->
+      <a href="https://play.google.com/store/apps/details?id=com.cricketfastlive" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-teal-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/QbvTu3nztHOOu-0Did07IIrT6xiKcWF95LZmU7z0NF2XvHvZXPUd7vsrGQYKvkFlSBw=s120-rw" alt="CFLL Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Cricket Fast Live Line - CFLL <svg class="w-4 h-4 text-muted group-hover:text-teal-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Real-time cricket scores with ball-by-ball commentary, match schedules, session updates, pitch reports, and notifications.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Cricket</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Live Scores</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Commentary</span>
+        </div>
+      </a>
+
+      <!-- Project 2: CricScore Line Guru Pro -->
+      <a href="https://play.google.com/store/apps/details?id=com.criclineguru.criclinegurupro" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-blue-600/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/Tw4ETTchTB5TrXfzBDJ8itiDc6yIytxRQRwqddqMm0LlhCCAd_eHfgDih10Fb72-XUBzAqJ7FZ3kx0dydcMcCn0=w240-h480-rw" alt="CricScore Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">CricScore Line Guru Pro <svg class="w-4 h-4 text-muted group-hover:text-blue-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Live cricket score app with ball-by-ball updates, audio commentary, scorecards, fixtures, rankings, and point tables.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Cricket</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Scorecard</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Fixtures</span>
+        </div>
+      </a>
+
+      <!-- Project 3: Cric Line Pro -->
+      <a href="https://play.google.com/store/apps/details?id=criclinepro.exchange.cricket.livescore.liveline" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-indigo-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/oBWih9OS_MGktfAD0EOxyI-6Zk44UXFa8sISHjODko5JdiYsrA_O5_oRrFz2Pr47Xkw=w240-h480-rw" alt="Cric Line Pro Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Cric Line Pro <svg class="w-4 h-4 text-muted group-hover:text-indigo-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Live cricket updates focused on fast scores, commentary, match details, rankings, and tournament coverage.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Cricket</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Live Updates</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Rankings</span>
+        </div>
+      </a>
+
+      <!-- Project 4: WannaBuy -->
+      <a href="https://play.google.com/store/apps/details?id=com.wannabuyapp" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-purple-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/aec_Q_GzIxkzRJjSIpF7mp8QbaKRYCOa50UoyRDRelpsNR9L86IOBxpN6GEidHVWUtqw=s120-rw" alt="WannaBuy Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">WannaBuy <svg class="w-4 h-4 text-muted group-hover:text-purple-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">A buyer-seller platform that matches users with exact requirements and connects them to relevant products instantly.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Marketplace</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Buying</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Matching</span>
+        </div>
+      </a>
+
+      <!-- Project 5: Visitor Book – Card Scanner -->
+      <a href="https://play.google.com/store/apps/details?id=com.frenzin.visitors" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-yellow-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/4NvuKOCs7aSfxUTx_PxSezAZ2sPRszeACVdc77WWJAEDt0UHBAvmPyeg4EZEfZMaTcA=s120-rw" alt="Visitor Book Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Visitor Book – Card Scanner <svg class="w-4 h-4 text-muted group-hover:text-yellow-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Business card scanning and lead-management app with OCR, CRM export, WhatsApp follow-ups, reminders, and offline support.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">OCR</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">CRM</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Lead Management</span>
+        </div>
+      </a>
+
+      <!-- Project 6: FCS Student -->
+      <a href="https://play.google.com/store/apps/details?id=com.app.fcsstudent" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-blue-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/22Y6DBux5-dCuloAWUrdclQ1wHDZhZ5qGz4vISx49w3m63iEiKVnHqoQGaHhFB2Zd3Kk=s120-rw" alt="FCS Student Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">FCS Student <svg class="w-4 h-4 text-muted group-hover:text-blue-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Student support app for viewing profiles, requesting support, authenticating timesheets, viewing reminders, and chatting with staff.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Student Portal</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Support</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Communication</span>
+        </div>
+      </a>
+
+      <!-- Project 7: FCS Staff -->
+      <a href="https://play.google.com/store/apps/details?id=com.app.fcsstaff" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-cyan-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/5veQ_PYg5ADff622eAek-3mLzqIFNE5oapFn9NGpGe8W8pzXVYFap63Z1UEkk3YL7UQ=s120-rw" alt="FCS Staff Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">FCS Staff <svg class="w-4 h-4 text-muted group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Staff app for scheduling support sessions, chatting with students, managing invoices, reminders, and support documents.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Staff Portal</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Scheduling</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Invoices</span>
+        </div>
+      </a>
+
+      <!-- Project 8: Indian Music Player -->
+      <a href="https://play.google.com/store/apps/details?id=com.zw.musicplayer" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-pink-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/BSwVb7tKKaZunkVzbRpIkYNnLGb3YbNCmQ7yGTuS75-GM3xYMb_aYK2THGEi003At8A=s120-rw" alt="Indian Music Player Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Indian Music Player <svg class="w-4 h-4 text-muted group-hover:text-pink-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Offline music player with playlist support, background playback, equalizer, widgets, lock-screen controls, and sleep timer.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Music</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Offline</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Equalizer</span>
+        </div>
+      </a>
+
+      <!-- Project 9: Indian Rewards -->
+      <a href="https://play.google.com/store/apps/details?id=com.zw.rewardapp" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-orange-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/IKfC5Hv-dhZw6XBoWokU_X-SBYEQpw_-dsWBqqvZoxnreUo7pNDcdqYmIPqEzd4sY4g=s120-rw" alt="Indian Rewards Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Indian Rewards <svg class="w-4 h-4 text-muted group-hover:text-orange-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Rewards app where users earn coins by exploring content, playing games, completing tasks, and checking in daily.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Rewards</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Coins</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Tasks</span>
+        </div>
+      </a>
+
+      <!-- Project 10: Cineparc -->
+      <a href="https://play.google.com/store/apps/details?id=com.mauri.cineparc" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-red-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/bwHI8YgZuhwYVc4rUaC1f7pJZ-tLcOGn32RW4l4xEG-ITA0b_B5wj3AHWRBE_MiTSn0=s120-rw" alt="Cineparc Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Cineparc <svg class="w-4 h-4 text-muted group-hover:text-red-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Open-air drive-in cinema app with show schedules plus movie and series database information.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Cinema</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Movies</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Schedule</span>
+        </div>
+      </a>
+
+      <!-- Project 11: Offline Currency Converter Pro -->
+      <a href="https://play.google.com/store/apps/details?id=currency.converter.offline" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-green-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/HQxWrcM7njy4ecGzjkOFM-zPfFXPnXGpR-LjUyKd8SkgTx7WtA3eItANcVjQq6W0KJ4=s120-rw" alt="Offline Currency Converter Pro Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Offline Currency Converter Pro <svg class="w-4 h-4 text-muted group-hover:text-green-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Offline currency converter with stored exchange rates, multi-currency conversion, and a built-in calculator.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Currency</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Offline</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Calculator</span>
+        </div>
+      </a>
+
+      <!-- Project 12: Facekart -->
+      <div onclick="alert('Not Available on PlayStore')" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-blue-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="assets/facekart_icon.jpg" alt="Facekart Icon" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform object-cover">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Facekart - WearOS <svg class="w-4 h-4 text-muted group-hover:text-blue-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+          <span class="px-2 py-0.5 bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase rounded">WearOS</span>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Smart watch app with battery-efficient sync and complication support.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">WearOS</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Tiles</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">DataLayer</span>
+        </div>
+      </div>
+
+      <!-- Project 13: Hedonova -->
+      <div onclick="alert('Not Available on PlayStore')" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-green-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="assets/hedonova_icon.png" alt="Hedonova Icon" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform object-cover">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Hedonova <svg class="w-4 h-4 text-muted group-hover:text-green-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+          <span class="px-2 py-0.5 bg-green-500/10 text-green-400 text-[10px] font-bold uppercase rounded">Investment</span>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Portfolio tracking and alternative investment platform with deep analytics.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Compose</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Charts</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Security</span>
+        </div>
+      </div>
+
+      <!-- Project 14: Tam -->
+      <div onclick="alert('Not Available on PlayStore')" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-pink-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="assets/tam_icon.jpg" alt="TAM Icon" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform object-cover">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">Live Auction / Tam <svg class="w-4 h-4 text-muted group-hover:text-pink-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+          <span class="px-2 py-0.5 bg-pink-500/10 text-pink-400 text-[10px] font-bold uppercase rounded">Realtime</span>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">High-frequency bidding platform with WebSocket and conflict resolution.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Socket</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Flow</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Firebase</span>
+        </div>
+      </div>
+
+      <!-- Project 15: FullVendor -->
+      <a href="https://play.google.com/store/apps/details?id=com.fullvendor" target="_blank" class="group cursor-pointer project-card block reveal">
+        <div class="bg-gradient-to-br from-orange-500/10 to-transparent aspect-[4/3] rounded-2xl mb-6 flex items-center justify-center border border-border relative overflow-hidden">
+          <div class="absolute inset-0 bg-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <img src="https://play-lh.googleusercontent.com/XV4YCezcmYwrJN4Q_Y7v0EBqg5fVCsPE0Z6f0FPInwxYXOb9neITfJvh0XgMKUyjs8Q=s120-rw" alt="FullVendor Logo" class="w-20 h-20 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform">
+        </div>
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-bold flex items-center gap-2">FullVendor <svg class="w-4 h-4 text-muted group-hover:text-orange-400 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></h3>
+        </div>
+        <p class="text-sm text-muted mb-6 leading-relaxed">Android marketplace app for browsing products, shopping, making payments, and tracking orders in one place.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Marketplace</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Shopping</span>
+          <span class="text-[10px] text-muted font-mono uppercase px-2 py-1 bg-surface border border-border rounded">Payments</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="py-12 border-t border-border/50 px-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="text-sm text-muted">© 2026 Ashwin Chovasiya • Full Project Archive</p>
+    <a href="index.html" class="text-accent font-bold text-sm hover:underline">Back to Portfolio</a>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
